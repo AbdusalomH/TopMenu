@@ -52,6 +52,7 @@ public class TopMenu: UIViewController, UICollectionViewDataSource, UICollection
     
     override public func viewDidLoad() {
         super.viewDidLoad()
+        setupView()
     }
     
     
