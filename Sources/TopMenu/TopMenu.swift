@@ -3,7 +3,11 @@
 
 import UIKit
 
-public class TopMenu: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, ButtonCollectionDelegate {
+public protocol ButtonCollectionDelegate: AnyObject {
+    func didTapButton(withTitle Title: String)
+}
+
+public class TopMenu: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, @preconcurrency ButtonCollectionDelegate {
     
     
     private var buttonTitle: [String]
