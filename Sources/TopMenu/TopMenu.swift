@@ -57,6 +57,9 @@ public class TopMenu: UIViewController, UICollectionViewDataSource, UICollection
     override public func viewDidLoad() {
         super.viewDidLoad()
         setupView()
+        if let firstTitle = buttonTitle.first {
+            displayContent(title: firstTitle)
+        }
     }
     
     
